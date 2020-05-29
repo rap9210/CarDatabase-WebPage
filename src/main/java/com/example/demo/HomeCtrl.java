@@ -65,11 +65,15 @@ public class HomeCtrl {
     @RequestMapping("/carRepository")
     public String allCars(Model model){
         model.addAttribute("cars", carRepository.findAll());
+        model.addAttribute("categories", categoryRepository.findAll());
         return "carRepository";
     }
+
+
     @RequestMapping("/categoryList/{id}")
     public String viewCarList(@PathVariable("id") long id, Model model){
         model.addAttribute("category", categoryRepository.findById(id).get());
+        model.addAttribute("categories", categoryRepository.findAll());
         return "carList";
     }
 
@@ -95,17 +99,12 @@ public class HomeCtrl {
             return "newCategory";
         } else if (carRepository.existsById(id)) {
             model.addAttribute("car", carRepository.findById(id).get());
+            model.addAttribute("categories", categoryRepository.findAll());
             return "newCar";
         }
         else{
             return "redirect:/";
         }
     }
-
-
-
-
-
-
 
 }
