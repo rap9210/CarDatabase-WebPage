@@ -24,6 +24,17 @@ td{
 
 }
 
+h2{
+    color: whitesmoke;
+}
+
 .container{
-    text-align: center;
+    text-align: right;
+}
+
+.jumbotron-fluid{
+
+    background-image: url("https://www.audi-sport.net/xf/attachments/leftfront1-jpg.39602/");
+    background-size: cover;
+    background-position: center;
 }
