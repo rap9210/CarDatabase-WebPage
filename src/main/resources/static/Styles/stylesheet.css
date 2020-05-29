@@ -1,0 +1,29 @@
+nav{
+}
+
+body{
+    background-color: #9d313d;
+}
+.card{
+    width: 500px;
+    text-align: center;
+    height: 500px;
+    padding-left: 170px;
+    padding-top: 160px;
+    background-color: #9d313d;
+    border: none;
+}
+th{
+    text-align: center;
+}
+td{
+   text-align: center;
+}
+.col-8{
+    align-content: center;
+
+}
+
+.container{
+    text-align: center;
+}
